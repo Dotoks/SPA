@@ -1,0 +1,77 @@
+{{> header}}
+<!-- Dashboard (All Causes View) -->
+  <div class="content">
+
+        <section class="js">
+            <h2>JavaScript</h2>
+            <div class="articles">
+              {{#each articles}}
+                    {{#if isJavaScript}}
+                <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+                </article>
+               
+                
+                {{/if}}
+           
+              
+              
+                {{/each}}
+                   </div>
+                   
+        </section>
+
+        <section class="CSharp">
+            <h2>C#</h2>
+            <div class="articles">
+                {{#each articles}}
+                {{#if isCSharp}}
+               <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+                </article>
+                {{/if}}
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="Java">
+            <h2>Java</h2>
+            <div class="articles">
+             {{#each articles}}
+                {{#if isJava}}
+               <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+                </article>
+                {{/if}}
+                {{/each}}
+            </div>
+        </section>
+        <section class="Pyton">
+            <h2>Pyton</h2>
+            <div class="articles">
+              {{#each articles}}
+                {{#if isPyton}}
+               <article>
+                    <h3>{{title}}</h3>
+                    <p>{{content}}</p>
+                    <a href="#/details/{{id}}" class="btn details-btn">Details</a>
+                </article>
+                {{/if}}
+              
+                {{/each}}
+            </div>
+        </section>
+    </div>
+            
+                
+               
+              
+         
+<!-- ./Dashboard (All Causes View) -->
+{{> footer}}

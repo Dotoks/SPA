@@ -1,0 +1,19 @@
+{{!-- <section id="notifications">
+        <div class="p-3 mb-2 bg-success w-50 text-white text-center" id="successNotification">Success</div>
+        <div class="p-3 mb-2 bg-danger w-50 text-white text-center" id="errorNotification">Error</div>
+        <div class="p-3 mb-2 bg-info w-50 text-white text-center" id="loadingNotification">Loading...</div>
+    </section> --}}
+
+<!-- Navigation -->
+ <header>
+        <h1><a class="home" href="#/dashboard">SoftWiki</a></h1>
+        <nav class="nav-buttons">
+            {{#if isLoggedIn}}
+            <a href="#/create">Create</a>
+            <a href="#/logout">Logout</a>
+            {{else}}
+            <a href="#/register">Register</a>
+            {{/if}}
+        </nav>
+    </header>
+<!-- ./Navigation -->
